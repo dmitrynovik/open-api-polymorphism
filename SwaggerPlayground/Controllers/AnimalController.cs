@@ -15,6 +15,7 @@ namespace SwaggerPlayground.Controllers
 
     [JsonConverter(typeof(JsonInheritanceConverter), "discriminator")]
     [KnownType(typeof(Dog))]
+    [KnownType(typeof(Cat))]
     public class Animal
     {
         public int Age { get; set; }
